@@ -1,0 +1,25 @@
+ls
+exit
+ls
+isaaclab --new 
+ls
+cd openarm_playground/
+ls
+ls -al
+cd ..
+ls
+ls -al
+ls
+cd openarm_playground/
+ls
+ls -al
+vim .dockerignore 
+vi .dockerignore 
+apt-get update
+ls
+apt-get install vim
+ls
+ls -al
+vim .dockerignore 
+ls
+ls -al
