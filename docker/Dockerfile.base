@@ -54,6 +54,9 @@ RUN --mount=type=cache,target=/var/cache/apt \
 # Copy the Isaac Lab directory (files to exclude are defined in .dockerignore)
 COPY ../third_party/IsaacLab ${ISAACLAB_PATH}
 
+# Copy the entrypoint.sh script
+COPY docker/entrypoint.sh /entrypoint.sh
+
 # Ensure isaaclab.sh has execute permissions
 RUN chmod +x ${ISAACLAB_PATH}/isaaclab.sh
 

@@ -51,7 +51,7 @@ x-default-isaac-lab-volumes: &default-isaac-lab-volumes
   - type: bind
     source: ../third_party/IsaacLab/tools
     target: ${DOCKER_ISAACLAB_PATH}/tools
-    # openarm_isaaclab repo
+    # openarm_playground repo
   - type: bind
     source: ../
     target: ${DOCKER_REPO_PATH}
@@ -108,7 +108,7 @@ services:
     network_mode: host
     deploy: *default-isaac-lab-deploy
     # This is the entrypoint for the container
-    entrypoint: bash
+    entrypoint: ["/entrypoint.sh"]
     stdin_open: true
     tty: true
 
@@ -137,7 +137,7 @@ services:
     network_mode: host
     deploy: *default-isaac-lab-deploy
     # This is the entrypoint for the container
-    entrypoint: bash
+    entrypoint: ["/entrypoint.sh"]
     stdin_open: true
     tty: true
 
