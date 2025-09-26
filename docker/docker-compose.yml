@@ -1,0 +1,10 @@
+services:
+  sphinx-docs:
+    build:
+      context: .
+      dockerfile: Dockerfile.docs
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../:/src  # Live sync your local docs with the container
+    command: sphinx-autobuild docs docs/_build/html --host 0.0.0.0 --port 8000
