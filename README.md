@@ -66,3 +66,13 @@ If you use Sphinx Book Theme Template, please consider citing:
     url = {https://github.com/trushant05/sphinx_book_theme_template}
 }
 ```
+
+Install uv:
+```
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+Fetch IsaacLab module via gitman:
+```
+uv run gitman install
+```

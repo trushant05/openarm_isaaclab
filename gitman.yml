@@ -1,0 +1,17 @@
+location: .gitman
+sources:
+  - repo: https://github.com/isaac-sim/IsaacLab
+    name: main
+    rev: bd547aa60873ae8d696197ba9f233da36f65110d
+    type: git
+    params:
+    sparse_paths:
+      -
+    links:
+      - target: ./third_party/IsaacLab
+    scripts:
+      -
+
+default_group: 'main'
+groups:
+  -
