@@ -21,6 +21,8 @@ RUN --mount=type=cache,target=/var/cache/apt \
     apt-get update && apt-get install -y --no-install-recommends \
     ros-humble-${ROS2_APT_PACKAGE} \
     ros-humble-vision-msgs \
+    # Additional packages for openarm_playground
+    ros-humble-xacro \
     # Install both FastRTPS and CycloneDDS
     ros-humble-rmw-cyclonedds-cpp \
     ros-humble-rmw-fastrtps-cpp \

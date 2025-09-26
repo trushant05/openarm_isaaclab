@@ -1,7 +1,7 @@
 location: .gitman
 sources:
   - repo: https://github.com/isaac-sim/IsaacLab
-    name: main
+    name: isaaclab
     rev: bd547aa60873ae8d696197ba9f233da36f65110d
     type: git
     params:
@@ -11,7 +11,21 @@ sources:
       - target: ./third_party/IsaacLab
     scripts:
       -
-
+  - repo: https://github.com/enactic/openarm_description.git
+    name: openarm_description
+    rev: 6148297241fb0402eafe2c6eed455ae4e90d4552
+    type: git
+    params:
+    sparse_paths:
+      -
+    links:
+      - target: ./ros2_ws/src/openarm_description
+    scripts:
+      -
 default_group: 'main'
 groups:
-  -
+  - name: main
+    members:
+      - isaaclab
+      - openarm_description
+

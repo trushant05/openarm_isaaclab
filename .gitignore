@@ -2,6 +2,12 @@
 .gitman
 third_party
 
+# ROS2
+ros2_ws/src/openarm_description
+ros2_ws/install
+ros2_ws/log
+ros2_ws/build
+
 # C++
 **/cmake-build*/
 **/build*/
